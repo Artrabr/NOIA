@@ -1,0 +1,224 @@
+*{
+    font-size: 15px;
+}
+:root{
+    --backgroudColor: rgb(0,0,0);
+    --meanColor: rgb(43, 43, 43);
+    --meanTextColor: rgb(255, 255, 255);
+    --ButtonTextColor: rgb(24, 53, 58);
+    --menuBackColor: rgb(0,0,0);
+    --BlueMeanColor: rgb(151, 252, 255);
+    --EmphasisShadow: rgb(255, 255, 255);
+}
+body{
+    margin: 0;
+    background-color: var(--meanColor);
+}
+
+/*-----------Fontes-----------*/
+@font-face {
+    font-family: grafite;
+    src: url(fontes/Sedgwick_Ave_Display/SedgwickAveDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: corporativo;
+    src: url(fontes/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+.fonteurbana{
+    font-family: grafite;
+    color: var(--meanTextColor);
+    font-size: 1em;
+    text-decoration: none;
+}
+.fontecorporativa{
+    font-family: corporativo;
+    color: var(--meanTextColor);
+    font-size: 1em;
+    text-decoration: none;
+}
+.titleSize{
+    font-size: 3em;
+}
+/*-----------Cabecalho-----------*/
+.cabContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    
+    transition: 1s;
+    background-color: var(--meanColor);
+    padding: 0px;
+}
+.cabContainer:hover{
+    transition: 1s;
+    padding: 20px;
+}
+
+div[class="cabContainer"] img{
+    width: 100%;
+    height: 185px;
+    object-fit: cover; /*recorta a imagem pra caber*/
+    object-position: center;
+}
+
+/*----------------------menu----------------------*/
+.menuContainer{
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--menuBackColor);
+}
+div[id="meanMenu"] a{
+    color: var(--meanTextColor);
+    text-decoration: none;
+    width: 80px;
+    transition: 0.3s;
+    font-size: 1em;
+}
+div[id="meanMenu"] a:hover{
+    color: var(--BlueMeanColor);
+    text-decoration: none;
+    width: 80px;
+    transition: 0.3s;
+    transform: scale(1.3);
+}
+/*---------------------------------------------------------------------------content---------------------------------------------------------*/
+
+.NewsLineConainer{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    background-color: var(--meanColor);
+    color: var(--meanTextColor);
+    box-shadow: 5px 5px 30px black;
+    padding: 20px;
+}
+.NewsText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div[class="NewsLineConainer"] h1,h2,h3,p{
+    margin: 0;
+}
+/*------------banners---------------*/
+.FBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border: 1px var(--backgroudColor) solid;
+}
+.UnitCard{
+    border: 1px solid var(--BlueMeanColor);
+    border-radius: 20px;
+    color: var(--meanTextColor);
+    padding: 20px;
+    width: 350px;
+    height: 450px;
+
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.DateCard{
+    padding: 5px;
+    background-color: var(--BlueMeanColor);
+    border-radius: 5px;
+    color: var(--ButtonTextColor);
+}
+.boxTextCard{
+    padding: 5px;
+    border: 1px var(--meanColor) solid;
+    border-radius: 10px;
+    transition: 1s;
+}
+.boxTextCard:hover{
+    transition: 1s;
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--EmphasisShadow);
+}
+.imgCardNews {
+    border-radius: 10px;
+    width: 100%;
+    height: 185px;
+    object-fit: cover; /*recorta a imagem pra caber*/
+    object-position: center; /* foca no centro */
+}
+.buttonCard{
+    padding: 5px;
+    background-color: var(--BlueMeanColor);
+    border-radius: 5px;
+    color: var(--ButtonTextColor);
+    border: 1px solid var(--BlueMeanColor);
+    transition: 1s;
+}
+.buttonCard:hover{
+    transform: scale(1.1);
+    background-color: var(--BlueMeanColor);
+    border-radius: 5px;
+    color: var(--meanTextColor);
+    border: 1px solid var(--BlueMeanColor);
+    background-color: var(--meanColor);
+    transition: 1s;
+}
+
+.NewsCadContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*-----------------------------container-------------------------------*/
+.contatoRodapeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: var(--meanTextColor);
+}
+div[class="contatoRodapeContainer"] a{
+    color: var(--meanTextColor);
+    text-decoration: none;
+    font-family: corporativa;
+}
+.contatoRodapeContainer a {
+    color: var(--meanTextColor) !important;
+    text-decoration: none !important;
+    font-family: corporativo;
+}
+
+.contatoRodapeContainer a:visited {
+    color: var(--meanTextColor) !important;
+}
+
+.contatoRodapeContainer a:hover {
+    color: var(--BlueMeanColor);
+    text-decoration: underline;
+}
+.rodapeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--backgroudColor);
+}
+/*------------------efeitos a parte----------------------*/
+.shadowboxefect{
+    box-shadow: 0px 0px 20px var(--backgroudColor);
+}
+.plus20pxMargin{
+    margin-bottom: 20px;
+}

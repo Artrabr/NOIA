@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--meanColor);
+}
+.cabContainer p, 
+.cabContainer h1 {
+  margin: 0;
+  padding: 0;
+}
+div[id="meanMenu"] button{
+    border: 0px;
+    color: var(--meanTextColor);
+    background-color: rgba(0, 0, 0, 0);
+}
+.equipe-meanmenu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    height: 60px;
+    margin-left: 15px;
+}
+div[id="meanMenu"] button {
+    border: 1px solid var(--BlueMeanColor);
+    color: var(--meanTextColor);
+    background-color: transparent;
+    font-family: corporativo;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+div[id="meanMenu"] button:hover {
+    background-color: var(--BlueMeanColor);
+    color: var(--ButtonTextColor);
+    transform: scale(1.1);
+}

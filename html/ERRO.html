@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(41, 41, 41);
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            height: 150px;
+            background-color: rgb(17, 17, 17);
+            border-radius: 20px;
+            color: white;
+        }
+        .texto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @font-face {
+        font-family: corporativo;
+        src: url(../css/fontes/Quicksand/Quicksand-VariableFont_wght.ttf);
+        }
+        .fontecorporativa{
+            font-family: corporativo;
+            color: white;
+            font-size: 1em;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/NOIA logo.svg" alt="LOGO" width="160px">
+    <br>
+    <div class="container fontecorporativa">
+        <img src="../img/errorDog.png" alt="PetERROR">
+        <div class="texto">
+            <h1>Tivemos Problemas com o LINK</h1>
+            <a href="../index.html">Retornar a pagina incial</a>
+        </div>
+    </div>
+    
+</body>
+</html>
