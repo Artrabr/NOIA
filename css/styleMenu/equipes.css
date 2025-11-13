@@ -38,3 +38,16 @@ div[id="meanMenu"] button:hover {
     color: var(--ButtonTextColor);
     transform: scale(1.1);
 }
+/*-------------------------------------------------------------------------*/
+.desativar{
+    display: none !important;
+}
+
+.kdContainer{
+    display: flex;
+}
+
+.selecb{
+    background-color: var(--BlueMeanColor);
+    color: var(--ButtonTextColor);
+}

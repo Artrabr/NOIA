@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/styleMenu/equipes.css">
-    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../../javascript/equipesPG.js"></script>
 </head>
+
 <body>
     <div class="cabContainer fontecorporativa shadowboxefect plus20pxMargin"><!--Cabecalho-->
-        <p>Cidade de Novo Hamburgo</p>
-        <a href="../../index.html"><img src="../../img/NOIA logo.svg" alt="logo" height="120px"></a>
-        <div class="fontecorporativa">Novo Olimpo de Inspiração Atlética 
 
+        <p>Cidade de Novo Hamburgo</p>
+
+        <a href="../../index.html"><img src="../../img/NOIA logo.svg" alt="logo" height="120px"></a>
+
+        <div class="fontecorporativa">
+            Novo Olimpo de Inspiração Atlética
         </div>
+
     </div>
     <div class="fontecorporativa equipe-meanmenu" id="meanMenu"><!--menu-->
-            <button>Masculino</button>
-            <button>Feminino</button>
+        <button onclick="showManTeam('homens')" id="homensB">Masculino</button>
+        <button onclick="showManTeam('mulheres')" id="mulheresB">Feminino</button>
     </div>
-    <div>
+
+    <!---------------------------------------Homens----------------------------------------->
+    <div class="sexContainer" id="homens" name="altera">
+        <h1>Selção Masculina</h1>
+
+        <div>
+            <h1>Titular</h1>
+            
+        </div>
     
     </div>
+
+    <!---------------------------------------Mulheres----------------------------------------->
+    <div class="sexContainer desativar" id="mulheres" name="altera">
+        <br>
+        <h1>Selção Feminina</h1>
+
+    </div>
 </body>
+
 </html>
